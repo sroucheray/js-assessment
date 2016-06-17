@@ -27,6 +27,7 @@ describe('strings', function() {
 
     inputStrings.forEach(function(str, index) {
       formattedStr = stringsAnswers.wordWrap(str, wrapCol);
+      console.log(formattedStr)
       expect(formattedStr).to.eql(outputStrings[index]);
     });
   });

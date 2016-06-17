@@ -10,6 +10,23 @@ exports.flowControlAnswers = {
     //
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
+    if (isNaN(num)) {
+        return false;
+    }
+
+    if (!(num % 5) && !(num % 3)) {
+        return 'fizzbuzz';
+    }
+
+    if (!(num % 3)) {
+        return 'fizz';
+    }
+
+    if (!(num % 5)) {
+        return 'buzz';
+    }
+
+    return num;
 
   }
 };

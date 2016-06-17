@@ -98,7 +98,6 @@ describe('permutation', function() {
   it('you should be able to return the set of all valid combinations of n pairs of parentheses.', function() {
     var expected = [ '((()))', '(()())', '(())()', '()(())', '()()()'];
     var result = recursionAnswers.validParentheses(3);
-
     expect(result.length).to.eql(5);
     _.each(expected, function(c) {
       expect(result).to.contain(c);
